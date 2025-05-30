@@ -154,11 +154,13 @@ try {
         </div>
       )}
 
-      <button
-        onClick={handleProcessOCR}
-        className="bg-blue-600 text-white px-4 py-2 rounded disabled:opacity-50"
-        disabled={!image || loading}
-      >
+<button
+  onClick={handleProcessOCR}
+  className="bg-blue-600 text-white px-10 py-6 rounded-lg text-xl font-semibold disabled:opacity-50"
+  disabled={!image || loading}
+>
+  {loading ? 'Procesando...' : 'Procesar OCR con IA'}
+</button>
         {loading ? 'Procesando...' : 'Procesar OCR con IA'}
       </button>
 
