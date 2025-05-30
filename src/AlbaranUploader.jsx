@@ -119,7 +119,7 @@ try {
   setData(productos); // Mostrar tabla en pantalla
 
   // Enviar productos a Google Sheets
-  await fetch(`http://localhost:4000/upload-albaran?numero=${encodeURIComponent(numeroAlbaran)}`, {
+  await fetch(`'https://cocina-backend.onrender.com/upload-albaran?numero=${encodeURIComponent(numeroAlbaran)}`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(productos),
