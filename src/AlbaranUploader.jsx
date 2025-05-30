@@ -20,6 +20,7 @@ export default function AlbaranUploader() {
       reader.onerror = (error) => reject(error);
     });
 
+  const apiKey = process.env.REACT_APP_OPENAI_KEY;
  const sendImageToOpenAI = async (file) => {
   const base64Image = await getBase64(file);
 
