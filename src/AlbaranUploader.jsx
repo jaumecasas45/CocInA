@@ -161,8 +161,6 @@ try {
 >
   {loading ? 'Procesando...' : 'Procesar OCR con IA'}
 </button>
-        {loading ? 'Procesando...' : 'Procesar OCR con IA'}
-      </button>
 
       {data && (
         <div className="mt-6">
