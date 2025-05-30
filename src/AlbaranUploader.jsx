@@ -29,7 +29,7 @@ export default function AlbaranUploader() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer aaa`
+        "Authorization": `Bearer ${apiKey}`
       },
       body: JSON.stringify({
         model: "gpt-4o",
